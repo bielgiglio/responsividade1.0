@@ -1,0 +1,91 @@
+@media (min-width: 769px){
+    .grid > ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        list-style: none;
+       
+    }    
+
+    li{
+        text-align: center;
+        border: solid 2px darkblue;
+        background-color: lightblue;
+        margin: 20px;
+    }
+    .grid2{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "texto1 imagem"
+        "texto2 imagem"
+        ;
+    }
+    .titulo{
+        grid-area: titulo;
+        text-align: center;
+    }
+    .imagem{
+        grid-area: imagem;
+        margin: 20px 20px 0px 10px;
+    }
+    .texto1{
+        grid-area: texto1;
+        margin: 20px 10px 0px 20px;
+        padding: 50px 0px 0px 0px;
+       
+        
+    }
+    .texto2{
+        grid-area: texto2;
+        margin-left: 20px;
+    }
+   
+} 
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1px) and (max-width: 768px){
+    .grid > ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        list-style: none;
+
+    }
+    li{
+       text-align: center;
+       border: solid 2px darkblue;
+       background-color: lightblue;
+       margin: 20px 20px 0px 20px;
+       padding: 0;
+    }
+    div{
+        margin: 30px;
+    }
+    main>h1{
+        text-align: center;
+        margin: 10px 20px 10px 20px;    
+    }
+    main>h3{
+        text-align: justify;
+        margin: 10px 20px 10px 20px;
+    }
+    main>p{
+        text-align: justify;
+        margin: 10px 20px 10px 20px;
+    }
+    div.imagem{
+        display: flex;
+        justify-content: center;
+    }
+}
